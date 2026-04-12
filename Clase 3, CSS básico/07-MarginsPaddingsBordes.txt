@@ -1,0 +1,21 @@
+Padding:
+Distancia interna
+
+from{
+    padding: 20px;
+}
+
+
+Margin:
+Distancia externa
+
+form{margin: 40px;
+}
+
+
+Border:
+El borde de un elemento
+
+from{
+    border: 2px solid black;
+}

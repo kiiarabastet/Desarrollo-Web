@@ -1,0 +1,38 @@
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: blueviolet;
+}
+
+
+#column {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: blue;
+}
+
+#row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    color: green;
+}
+
+#column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    color: brown;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: violet;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}

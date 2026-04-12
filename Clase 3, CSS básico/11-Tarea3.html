@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Clase 3</title>
+    <link rel="stylesheet" href="11-Tarea3.css">
+</head>
+
+<body>
+    <header>
+        <h1>¡Sacá tus entradas para #TechnoFest! Edición 2026</h1>
+    </header>
+
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre aquí" required>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Tu apellido aquí" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Tu Email aquí" required>
+        
+        <article> Si venís acompañad@ tenés 50% off en la segunda entrada.</article>
+        
+        <label>Voy</label>
+
+    <div class="acompañante">
+
+        <input type="radio" id="Sol@" name="acompañante">
+        <label for="Sol@">Sol@</label>
+        <input type="radio" id="Acompañad@" name="acompañante">
+        <label for="Acompañad@">Acompañad@</label>
+    </div>
+      
+        <label>Día que no querés perderte</label>  
+        <select required>
+            <option selected disabled>Seleccione un dia</option>
+            <option>Viernes</option>
+            <option>Sabado</option>
+            <option>Domingo</option>
+        </select>
+    
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>

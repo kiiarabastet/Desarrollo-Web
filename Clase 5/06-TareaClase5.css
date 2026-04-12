@@ -1,0 +1,253 @@
+/*evitar scroll horizontal*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*Mobile First*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(40, 137, 161); 
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 2.5rem; 
+    background-color: lightblue; 
+    color: black;
+    gap: 0.6rem;
+}
+
+/*Animación del logo*/
+
+.logo {
+    color: rgb(39, 39, 155);
+    font-size: 2.5rem; 
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; 
+    align-self: flex-start;
+    gap: 1rem;
+    font-size: 1.1rem; 
+    list-style-type: circle;
+    padding-left: 1.2rem; 
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+    color: rgb(60, 4, 60);
+}
+
+/*----------------------------------------------------------------
+Hasta aquí todo lo que está sobre el rectángulo superior lightblue
+------------------------------------------------------------------
+------------------------------------------------------------------
+Sigue la parte hero que está dentro del body rgb(40, 137, 161)
+----------------------------------------------------------------*/
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1.5rem; 
+}
+
+.hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 2rem;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.hero-text h2 { 
+    font-size: 2rem;
+}
+
+.hero-text p {
+    font-size: 1rem;
+}
+
+/*Agregué Transition en 0.5s ease al button, */
+/*Entre otros detalles*/
+.hero button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: lightblue;
+    cursor: pointer; 
+    transition: background 0.5s ease;
+    border: 2px solid purple;
+}
+
+/*Cuando la flechita se posa por encima, cambia el backgroud a rgb (38, 38, 142), haciendo que combine con las cards. Tiene el mismo efecto que cards y email*/
+/*Entre otros detalles*/
+
+.hero button:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.3);
+    background: rgb(38, 38, 142);
+}
+
+.hero img {
+    width: 70%;
+    max-width: 15rem;
+    animation-name: mover; /*nombre que le puse a la animación*/
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/*Quiero que la imagen se mueva desde el centro hacia la derecha, vuelva, haga el mismo rrecorrido hacia la izquierda para volver al centro y seguir infinitamente el mismo movimiento*/
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);    
+    }
+    25% {
+        transform: translateX(45px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-45px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.proyectos-intro {
+    text-align: center;
+    padding: 1.2rem;
+    color: black;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.2rem;
+}
+
+/*Agregué Transition a cada card en 0.5s ease*/
+
+.card {
+    background-color: rgb(38, 38, 142); 
+    border: 2px solid purple; 
+    padding: 1.2rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    width: 100%; 
+    max-width: 25rem;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+/*Cuando la flechita se posa por encima, cambia el backgroud a lightblue, haciendo que combine con las cards. Tiene el mismo efecto que button y email*/
+
+.card:hover {
+    transform: translateY(-0.6rem); 
+    box-shadow: 0px 0.6rem 1rem rgba(187, 223, 109, 0.3);
+    background: lightblue;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+/*--------------------------------------
+Finaliza hero para terminar con eñ email
+--------------------------------------*/
+
+/*Agregué transition en 0.5s ease*/
+
+
+#email {
+    font-size: 1rem;
+    background: lightblue; 
+    padding: 0.6rem;
+    border: 3px solid purple;
+    border-radius: 0.3rem;
+    width: 80%;
+    max-width: 18rem;
+    transition: background 0.5s ease;
+}
+
+/*Cuando la flechita se posa por encima, cambia el backgroud a rgb(38, 38, 142), haciendo que combine con las cards. Tiene el mismo efecto que button y cards y viveversa*/
+
+#email:hover {
+ background: rgb(38, 38, 142);
+}
+
+/*---------------
+/*CSS para Tablet
+---------------*/
+
+
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+/*--------------
+CSS para Desktop
+---------------*/
+
+
+@media (min-width: 1024px) {
+    .navbar {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .menu {
+        flex-direction: row; 
+        align-self: center; 
+        gap: 3rem;
+        list-style-type: none;
+    }
+
+    .hero {
+        flex-direction: row; 
+        justify-content: space-between;
+        text-align: left;
+        padding: 4rem;
+    }
+
+    .hero img {
+        width: 40%; 
+        max-width: 35rem;
+    }
+
+    .card {
+        width: 30%; 
+    }
+}

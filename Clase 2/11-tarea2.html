@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Desarrollo Web 2° clase</title>
+</head>
+
+<body>
+    <h1>Atención al Cliente</h1>
+    <form>
+        <label for="nombre">Nombre</label> <br>
+        <input type="text" minlength="3" name="nombre" id="nombre" placeholder="Ingrese su nombre"> <br><br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email" placeholder="Ingrese su email" required><br><br>
+
+        <label for="telefono">Telefono</label> <br>
+        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono"> <br><br>
+
+        <label for="motivo">Motivo de contacto</label><br>
+
+        <select name="motivo" id="motivo">
+
+            <option selected></option>
+            <option>Consulta</option>
+            <option>Trabajo</option>
+        </select> <br><br>
+
+        <label>Tipo de cliente:</label><br>
+        <input type="radio" name="tipo" id="Particular">
+        <label for="Particular">Particular</label>
+        <input type="radio" name="tipo" id="Empresa">
+        <label for="Empresa">Empresa</label>
+        <br><br>
+
+        <label for="cantidad">Cantidad:</label><br>
+        <input type="number" name="cantidad" id="cantidad" min="1" max="10">
+        <br><br>
+
+        <label for="mensaje">Mensaje</label><br>
+        <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje"></textarea><br><br>
+        
+        <input type="checkbox" name="terminos" id="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <h4>A la brevedad, nuestro soporte se pondrá en contacto con usted.</h4>
+
+    <footer>
+        <p>Revista Digital Ficticia, no compre imitaciones</p>
+    </footer>
+</body>
+
+</html>

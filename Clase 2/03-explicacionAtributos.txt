@@ -1,0 +1,39 @@
+
+Etiquetas, también llamados atributos:
+
+
+<div></div>           <- o División es una etiqueta que indica una "sección" en la página. Debe evitarse su uso desmedido o indiscriminado ya que es una etiqueta muy genérica.
+
+<header></header>     <- Es el encabezado de la página
+
+<section></section>   <- Para indicar una sección
+
+<article></article>   <- Contenido independiente (blog, noticia) 
+
+<nav></nav>           <- Para indicar barra de navegación
+
+<footer></footer>     <- Indica el pié de página
+
+<main></main>         <- Indica la sección principal de una página
+
+<a></a>               <- o Anchor, sirve básicamente como hipervínculo o para linkear alguna sección de la página
+
+<form></form>         <- Etiqueta que se utiliza para englobar formularios
+
+<label></label>       <- Se utiliza como "título" de un input, da ciertas ventajas de accesibilidad
+
+<input></input>       <- Se utiliza para que el usuario de alguna manera ingrese información, hay avarios tipos de input
+
+<button></button>     <- Botón, se utiliza para también "lanzar" un formularios o enviarlo
+
+<select></select>     <- Es un desplegable donde elegiremos una entre varias opciones
+
+<option></option>     <- Son las opciones del select
+
+<textarea></textarea> <- Es una caja de texto, que se puede "agrandar y achicar" para poner un mensaje de múltiples líneas
+
+<ul></ul>             <- de "unordered list" -lista no ordenada . crea una lista no ordenada.Está definido como: Elemento para listas. Crea una                      caja: en bloque. Puede contener: Uno o más elementos li
+
+
+Usamos estas etiquetas por el SEO (Search Engine Optimization) o por asi decirlo, posicionarnos mejor en Google
+Ademas de eso, por la accesibilidad (Es decir, que la pagina sea "navegable" para personas con capacidades diferentes)

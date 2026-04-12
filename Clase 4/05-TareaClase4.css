@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    background-color: violet;
+    color: black;
+    padding: 20px 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;                     
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+/* hasta aquí se termina de editar todo lo que está dentro de la barra violeta superior navbar y menu*/
+
+.cards {
+    display: flex;
+    justify-content: space-around;  
+    gap: 25px;                      
+    padding: 40px;
+}
+
+.cards div {
+    background-color: pink;
+    border: 1px solid purple;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1; 
+    cursor: pointer;
+}
+
+.cards div:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.3);
+}
+
+/* hasta aquí hemos aplicado todas estas reglas CSS en el desktop, o sea si estamos en una sesión de escritorio en la computadora*/
+
+/* Desktop First  se llama cuando primero se crean las reglas para una sesión de escritorio*/
+
+/* Mobile First cuando se empieza a crear las reglas empezando para una sesión en el celular*/
+
+/* hoy en día se agregan primero las reglas para móvil y media query para escritorio*/
+
+@media (max-width: 768px) {         
+    .cards {
+        flex-direction: column;     
+    }
+
+    .navbar {
+        flex-direction: column;     
+        gap: 15px;
+    }
+    
+    .menu {
+        padding-bottom: 10px;
+    }
+}

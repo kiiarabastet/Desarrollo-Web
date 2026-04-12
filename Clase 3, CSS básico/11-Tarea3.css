@@ -1,0 +1,52 @@
+form {
+    display: -webkit-flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    border: 2px solid violet;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px purple;
+    background-color: cadetblue;
+
+    input, select {
+    text-align: center;
+}
+
+    button {
+        border-radius: 5px;
+        width: 190px;
+        margin: auto;
+    }
+
+    button:hover {
+        background-color: violet;
+        color: white;
+    }
+
+}   .acompañante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+body {
+    background-color: pink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    h1 {
+        text-align: center;
+        width: 350px;
+        margin: 10px auto; 
+        font-size: 20px;
+       
+    }
+}

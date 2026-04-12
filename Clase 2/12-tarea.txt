@@ -1,0 +1,10 @@
+Mejorar el formulario del desafío final con:
+
+1 casilla de aceptación de términos (obligatorio)
+
+2 botones de radio (por ejemplo:tipo de cliente)
+
+Un campo number con validación min/max <- esto para investigar en Google
+
+Cada una de estas cosas con su etiqueta que esté "conectado" al input
+

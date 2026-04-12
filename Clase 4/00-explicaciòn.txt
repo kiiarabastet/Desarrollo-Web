@@ -1,0 +1,43 @@
+¿Como se alinearian 3 cajas diferentes sin usar display flex?
+
+puede ser con:
+
+-inline block
+-margin y padding
+-grid, float, etc.
+
+Flexbox nacio para resolver el problema del alineado y
+distribucion
+
+----------------------------
+
+Flexbox trabaja con
+
+-Contenedor (padre) (el body es un contenedor cuyos hijos son el header y el form)
+-items (hijo)
+
+(toma de nota)
+body es un contenedor padre cuyos hijos son el header y el form (pueden haber más)
+form es un contenedor padre cuyos hijos son los label, input, select, button (pueden haber más)
+header es un contenedor padre, sus hijos son los h1, h2, h3, h4, h5, h6
+se puede ser padre e hijo a la vez
+
+hay una discusiòn entre si el HTML es contenedor o no. Cuando se habla de contenedor se habla de la parte visual, la parte visual es solamente lo que está dentro de body.
+
+----------------------------
+
+cuando yo pongo:
+
+form{
+    display:flex;
+}
+
+¿De quién cambio la disposicion? ¿Del padre o del hijo?
+
+Respuesta: del hijo. Le aplico display flex a los hijos de form, le cambia la propiedades que el contenedor contiene.
+
+---------------------------
+
+Media Query
+
+hace que se aplique una regla CSS según parámetros del sipositivo desde donde lo ve el usuario, por ejemplo el ancho de la pantalla. 

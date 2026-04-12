@@ -1,0 +1,24 @@
+Por ejemplo, si buscas algo en Internet, el texto que escribes es la entrada. Los resultados que aparecen en tu pantalla son la salida. Las entradas proporcionan los parámetros necesarios para que los dispositivos puedan actuar, mientras las salidas reflejan los resultados de esas acciones.
+
+El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.Hay disponible una amplia variedad de tipos de datos de entrada y widgets de control, que dependen del dispositivo y el agente de usuario (user agent).El elemento <input> es uno de los más potentes y complejos en todo HTML debido a la gran cantidad de combinaciones de tipos y atributos de entrada.
+
+-Debe tener una etiqueta de apertura y no debe tener etiqueta de cierre.
+-Elementos padre permitidos: Cualquier elemento que acepte contenido textual.
+
+text = Sirve para valores tipo texto
+
+email = sirve para validar que lo que se ingresa es de tipo Email 
+
+password = Sirve para ocultar lo que se escribe en el input, especialmente util para passwords
+
+Number = sirve para ingresar SOLO números, no permite escribir otra cosa, y cuenta con un control que se puede manejar con el mouse
+
+Checkbox = Es una casilla para "tildar"
+
+radio = Es un boton circular, el cual en general se usa para "multiple choice"
+
+date = Es para elegir una fecha
+
+submit = Sirve para enviar un formulario
+
+tel = Valida que tenga formato de telefono

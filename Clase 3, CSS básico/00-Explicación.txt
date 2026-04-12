@@ -1,0 +1,68 @@
+¿Qué hace HTML?
+
+¿Qué problemas o que faltantes tiene una página SOLO con HTML?
+Le falta visual y funcionalidad
+
+¿Qué es CSS?
+Cascading Stylesheets es la froma de darle estilo a nuestra página
+
+Frase Clave:
+HTML Estructura, CSS Diseño
+
+Hay tres formas de conectar HTML y CSS:
+
+
+
+INLINE
+
+
+<body>
+<h1 style="color:red">Hola</h1>
+</body>
+
+Donde:
+
+style = estilo         color = propiedad               red = valor
+
+---------------
+
+INTERNO:
+(no se usa seguido, poco común)
+
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Hola</h1>
+ </body>
+ </html>
+
+Donde le digo que a la etiqueta h1 le aplique la propiedad "color" y valor "red".
+Por ejemplo: 02-Interno.html este archivo tiene dos responsabilidades, se encarga de estructurar y dar estilo. 
+¡Ojo! Si llegara a haber un problema hay que revisar el todo el código porque justamente todo el contenido de la página se encuentra aquí.
+
+----------------
+
+EXTERNO: 
+(se debe crear un CSS a parte que conectará con este HTML)
+
+Por ejemplo: Se crea 03-Externo.css que estará conectado a 03-Externo.html
+
+Dentro de 03-Externo.css:
+
+h1 { 
+    color: red
+}
+
+Mientras que en 03-Externo.html:
+
+<link rel="stylesheet" href="03-Externo.css">
+
+"Link rel" me comunica con un archivo externo en el que puedo colocar las reglas que quiera. Es la mejor forma, prolija y que más se usa.
+Es la manera más profesional porque estamos separando responsabilidades
+El archivo 03-Externo.html da estructura y 03-Esterno.css da estilo.
+Si llegara a surgir un problema, tenemos separadas las responsabilidades, or lo que podemos chequear ambos archivos sin miedo. Ameás sirve para trabajar de manera conjunta con alguien más.

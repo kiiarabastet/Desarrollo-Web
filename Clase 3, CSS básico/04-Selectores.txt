@@ -1,0 +1,72 @@
+Un selector es una forma de "seleccionar" un elemento HTML para aplicar reglas CSS
+
+Hay tres formas básicas. Veamos la sintaxis básica:
+
+Selector {
+    propiedad:valor;
+}
+
+------------------------------------------------------------------------------------------
+
+SELECTORES FUNDAMENTALES:
+...................................
+
+Selector por etiqueta/atributo:
+
+h1{
+    color:blue;
+}
+
+Esto selecciona TODOS los h1 y le aplica estilo
+Por lo que tendremos que evaluar si queremos aplicarle realmente a todos los h1 la misma etiqueta o selecionamos otro modo.
+
+-------------------------------------
+
+-Selector por clase :
+
+HTML:
+
+<p class="parrafo">blablabla</p>
+
+CSS
+
+.parrafo {
+    color:blue;
+}
+
+Cuando es selector de clase, en CSS va un punto antes del nombre de clase. Está bueno para aplicarle el mismo CSS a varios elementos distintos. 
+Se puede aplicar la clase a cuantos elementos nosotros queramos. 
+
+
+-------------------------------------
+
+Selector por ID
+
+HTML
+
+<p id="texto">Texto</p>
+
+CSS
+
+#texto{
+    color:red;
+}
+
+Cabe destacar que selector de id lleva un numeral, además en general el id es un elemento que no se debería repetir en otro. Es decir, el selector de ID nos sirve para aplicar estilo a un solo elemento.
+
+------------------------------------------
+
+Selector descendente:
+
+HTML:
+
+<section>
+      <p>Hola<p>
+</section>
+
+CSS:
+
+section p{
+    color:green;       <- Todas las etiquetas p que estén dentro de la etiqueta section. Una condición
+}
+

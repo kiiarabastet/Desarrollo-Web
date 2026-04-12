@@ -1,0 +1,31 @@
+section p {
+    color: violet
+}
+
+.Hola p {  
+    color: red
+}
+
+.Saludo h1 {
+    color: green
+}
+
+.feliz h3 {
+    color: blue
+}
+
+.MiDia {
+    color: aqua
+}
+
+.cantidad {
+    color: yellowgreen
+}
+
+#cantidad {
+    color: red
+}
+
+body {
+    background-color:#f854
+}
