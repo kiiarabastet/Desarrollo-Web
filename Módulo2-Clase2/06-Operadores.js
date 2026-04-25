@@ -4,7 +4,7 @@ let suma = 3 + 5 // da 8
 let resta = 5 - 3 // da 2
 let multiplicacion = 5 * 3 // da 15
 let division = 9 / 3 // da 3
-let modulo = 10 % 3 // aca da 1 (no se puede usar decimales y restan solo enteros de la división)
+let modulo = 10 % 3 // aca da 1 (no se puede usar decimales y restan solo enteros de la división) // se suele usar para ver si un número es par o impar
 
 // un ejemplo practico del modulo
 let esPar = 5 % 2 == 0
