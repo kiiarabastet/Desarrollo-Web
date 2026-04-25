@@ -14,7 +14,7 @@ let esIgual = 3 == 3 // esto da true
 let esIgual2 = 3 == '3' // esto TAMBIEN da true
 let esDesigual = 3 !== 'hola' // esto da true, porque es desigual
 let esIgualEstrictamente = 3 === 3 // esto da true
-let esIgualEstrictamente2 = 3 === '3' // esto da false, porque compara el tipo de dato y el valor
+let esIgualEstrictamente2 = 3 === '3' // esto da false, porque compara el tipo de dato y el valor // ´3´ es un string, el valor es el mismo pero los diferencia que un número puede ser un texto
 
 let esMayor = 3 > 2 //esto da true
 let esMayorIgual = 3 >= 3 // esto da true
