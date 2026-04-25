@@ -21,20 +21,20 @@ let esMayorIgual = 3 >= 3 // esto da true
 let esMenor = 3 < 2 // esto da false
 let esMenorIgual = 3 <= 2 //esto da false
 
-// logica de boole
+// LÓGICA DE BOOLE
 // AND OR NOT (y, o, no)
-// AND -> devuelve true cuando las dos expresiones que comparamos son true
+// AND -> devuelve true cuando las dos expresiones que comparamos son true // TRUE SÓLO CUANDO AMBAS EXPRESIONES SON VERDADERAS, EN TODOS LOS DEMÁS CASOS ES FALSE
 true && true // true
 true && false //false
 false && true // false
 false && false // false
 
-// OR -> Devuelve true cuando alguna de las dos expresiones es true
+// OR -> Devuelve true cuando alguna de las dos expresiones es true // TRUE SIEMPRE QUE AL MENOS UNA DE LAS EXPRESONES SEA VERDADERA, EN EL OTRO CASO ES FALSE
 true || true // true
 true || false // true
 false || true // true
 false || false // false
 
-// NOT <- invierte el estado de veracidad de algo
+// NOT <- invierte el estado de veracidad de algo // se lee como "NOT TRUE" cuando !TRUE // se lee como "NOT FALSE" cuando !FALSE
 !true // false
 !false // true
