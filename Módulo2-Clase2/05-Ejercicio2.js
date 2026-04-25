@@ -19,7 +19,7 @@ console.log("tipo de dato: " + typeof boolean)
 
 
 let edadKiara = 24
-let esMayor = edadKiara >= 18
+let esMayor = edadKiara >= 18 // edadKiara >= 18 se va a convertir en uns expresión booleana
 
 console.log("Es mayor de edad:", esMayor)
 
@@ -27,7 +27,7 @@ console.log("Es mayor de edad:", esMayor)
 
 // operaciones basicas
 
-let numero1 = 15
+let numero1 = 25
 let numero2 = 10
 
 console.log("El resultado de la suma es: ", (numero1 + numero2))
