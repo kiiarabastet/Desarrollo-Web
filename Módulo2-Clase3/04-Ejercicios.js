@@ -43,7 +43,7 @@ let contador = 0
 for (let i = 5; i >= 1; i--) {      // let i = 5: que arranque con i valiendo 5 // i--: Es lo opuesto a i++. Significa que, al final de cada vuelta, a i se le va a restar 1 en lugar de sumarle.
     contador += i                   // es exactamente lo mismo que escribir: contador = contador + i //
 }                                   
-
+console.log(contador)
 /* 
 El paso a paso (cómo lo piensa la computadora)
 Si miramos lo que pasa adentro de la computadora en cada vuelta, se ve así:
