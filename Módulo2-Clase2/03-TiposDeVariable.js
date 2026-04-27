@@ -28,9 +28,9 @@ let nulo = null;
 
 /* 
 "Hola" <- String
-true <- Booleano
-100 <- Numero
-null <- null
+true   <- Booleano
+100    <- Numero
+null   <- null
 */
 
 /* 
