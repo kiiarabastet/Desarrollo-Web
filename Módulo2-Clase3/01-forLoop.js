@@ -14,9 +14,9 @@ for (let i = 1; i <= repeticiones; i++) {
 /* 
 1. let i = 0    → empieza
 2. i < 5        → condición
-3.       → ejecuta código
+3.              → ejecuta código
 4. i++          → aumenta
-5. repite       →  
+5.              → repite
 */
 
 
@@ -50,10 +50,7 @@ i <= repeticiones -> true
 console.log(i) -> i es 3 aca
 i + 1 = 4
 
-
-
 */
-
 
 
 // iteracion           cada "vuelta" del bucle o cada repeticion
