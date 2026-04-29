@@ -20,14 +20,14 @@ function calcularSuma() {
     return resultado;
 }
 
-console.log(calcularSuma(50, 5))
+console.log(calcularSuma())
 
 function calcularResta() {
     let resultado = 10 - 2; // No hay problema, este es OTRO "resultado" distinto
     return resultado;
 }
 
-console.log(calcularResta(10, 2))
+console.log(calcularResta())
 
 
 /* 3. Ahorras memoria de la computadora
