@@ -11,7 +11,7 @@ Previene errores: Establece las reglas desde el principio. Si intentas usar una 
 // Entonces la DECLARACIÓN es:
 
 function saludar() {
-    // Aca va el código
+    // Aca va el código: console.log("Hola")
     console.log("Hola")
 }
 
@@ -49,12 +49,20 @@ saludarNombre("María")
 
 saludarNombre("Violeta")
 
-// ¿Como devuelvo un valor?
+saludarNombre("Amadeo")
+
+// ¿CÓMO DEVUELVO UN VALOR?
+
 function suma(numero1, numero2) {
     numero1 + numero2
 }
 
-console.log(suma(4, 5)) // aca me da undefined porque suma no me devuelve ningun numero, aunque los sume
+console.log(suma(4, 5)) // Acá me da UNDEFINED porque suma no me devuelve ningún número, aunque los sume
+
+/*------------------------------------------------------------------
+Por regla general en JavaScript: Si una función termina su ejecución y no tiene la instrucción explícita de qué devolver, devuelve undefined por defecto.
+Para arreglarlo, solo necesitas agregar la palabra clave return. Esto le dice a la función: "Haz esta operación matemática y entrégame el resultado para que yo pueda usarlo, guardarlo o imprimirlo".
+------------------------------------------------------------------*/
 
 function suma2(numero1, numero2) {
     // usamos la palabra reservada "return"
@@ -64,6 +72,18 @@ function suma2(numero1, numero2) {
 console.log(suma2(11, 4))
 
 /* 
-La funcionalidad del return es "devolver" un valor cuando la funcioon sea llamada
+La funcionalidad del RETURN es "devolver" un valor cuando la funcioon sea llamada
 ademas, "corta" la ejecucion de la funcion, es decir, cuando llega al return, se concluye la ejecucion
 */
+
+function suma3(numero1, numero2) {
+    return numero1 + numero2
+}
+
+console.log(suma3(56, 44))
+
+function resta(numero1, numero2) {
+    return numero1 - numero2
+}
+
+console.log(resta(25, 22))
