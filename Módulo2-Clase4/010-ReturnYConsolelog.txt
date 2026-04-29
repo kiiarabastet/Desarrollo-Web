@@ -1,0 +1,26 @@
+1. console.log (El Megáfono 📢)
+Sirve solo para ti, la programadora humana.
+
+Es como si la computadora agarrara un megáfono y te gritara a ti que estás mirando la pantalla: "¡Ey, estoy pasando por la línea 5!" o "¡El valor de esta variable en este exacto momento es 30!".
+
+¿Para qué se usa? Para revisar que tu código está haciendo lo que tú crees que debería hacer. Es tu herramienta para "espiar" el código mientras trabajas (por eso se llama "log", como una bitácora o registro).
+
+El problema: Al resto del programa no le importa en lo más mínimo el console.log. Una vez que el texto aparece dibujado en tu terminal de Visual Studio, se evapora en el aire. El código no puede "atrapar" ese texto, ni guardarlo, ni hacer matemáticas con él.
+
+2. return (El Repartidor 📦)
+Sirve para el programa (para que las distintas partes del código hablen entre sí).
+
+Es la forma oficial que tiene una función de "empacar" su resultado final y entregarlo de vuelta hacia afuera para que se pueda seguir utilizando.
+
+¿Para qué se usa? Para que el resultado de un cálculo no se destruya cuando la función termina. Cuando usas return, puedes agarrar ese resultado y guardarlo en una variable, sumarlo con otra cosa, o guardarlo en una base de datos real.
+
+El detalle: El return trabaja en silencio. Si usas return pero no le dices a la computadora que lo imprima (envolviéndolo en un console.log por fuera), la función hace todo su trabajo y entrega el paquete perfectamente, pero la terminal se quedará en negro y tú no verás nada.
+
+La Analogía de la Pizzería 🍕
+Imagina que llamas a una pizzería (tu función) y pides una pizza:
+
+Si el cocinero solo hace console.log("Pizza lista"): El cocinero asoma la cabeza por la ventana y te grita "¡LA PIZZA ESTÁ LISTA!". Tú lo escuchas perfecto (lo ves en la terminal). Pero... no te la entregó. ¡No tienes ninguna pizza en la mano y te vas a quedar con hambre!
+
+Si el cocinero hace return "Pizza lista": El cocinero trabaja en silencio en la cocina y, cuando termina, sale y te pone la caja con la pizza en las manos. Ahora el programa sí tiene el producto real, y tú decides si te lo comes, si lo guardas en la heladera (en una variable) o si le sacas una foto.
+
+Sabiendo esto... ¿Te animas a decirme qué usarías si tuvieras que hacer una función que calcule un descuento del 20% y necesitas guardar ese descuento final para cobrarle al cliente?
