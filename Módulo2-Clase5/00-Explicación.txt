@@ -36,13 +36,14 @@ Cosas importantes:
 
 Métodos comunes:
 
-push -> Agrega un elemento al final
-pop -> Elmina un elemento al final
-unshift -> Agrega elemento al principio
-shift -> Elimina elemento al principio
+push ->      Agrega un elemento al final
+pop ->       Elmina un elemento al final
+unshift ->   Agrega elemento al principio
+shift ->     Elimina elemento al principio
 
 
 Metodo         Que hace                 Donde
+
 push           Agrega elemento          Al final
 unshift        Agrega elemento          Al principio
 pop            Elimina elemento         Al final
