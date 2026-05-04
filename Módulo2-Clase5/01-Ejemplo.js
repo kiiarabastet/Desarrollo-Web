@@ -5,12 +5,15 @@ let frutas = ["Manzana", "Banana", "Naranja"]
 
 /* 
 Valor               Índice
+
 "Manzana"           0
 "Banana"            1
 "Naranja"           2
+
 */
 
-// Pero... ¿COmo accedo a estos datos? -> nombreDelARray[numeroDeIndice]
+// Pero... ¿Cómo accedo a estos datos? -> nombreDelARray[numeroDeÍndice]
+
 console.log(frutas[0])
 
 console.log(frutas[1])
